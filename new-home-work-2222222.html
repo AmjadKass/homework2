@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>roznamo</title>
+    </head>
+    <style type="text/css">
+    body {
+    font-family: Helvetica;
+    font-size: 1.4em;
+    text-align: center;
+    }
+    .container {
+    color: black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template: repeat(2, 1fr) / 1fr 2fr;
+    grid-template-areas: "a1  a2  " "a3  a3  ";
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    }
+    #a1 {
+    grid-area: a1;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    }
+    #a2 {
+    grid-area: a2;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    }
+    #a3 {
+    grid-area: a3;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    color: black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template: 1fr / repeat(4, 1fr);
+    grid-template-areas: "b1 b2 b3 b4"
+    }
+    #b1 {
+    grid-area: a1;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    }
+    #b2 {
+    grid-area: a2;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    }
+    #b3 {
+    grid-area: a2;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    }
+    #b4 {
+    grid-area: a3;
+    background-color: gray;
+    padding: 25px 12.5px;
+    color: white;
+    font-size: 30px;
+    }
+    .box {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-template-areas:
+    "title1"
+    "img1"
+    "body1"
+    ;
+    }
+    .box {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-template-areas:
+    "title2"
+    "img2"
+    "body2"
+    ;
+    }
+    .box {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-template-areas:
+    "title3"
+    "img3"
+    "body3"
+    ;
+    }
+    .b1-title{
+    grid-area: title1;
+    }
+    .b1-img{
+    grid-area: img1;
+    }
+    .b1-body {
+    grid-area: body1;
+    }
+    .b2-title{
+    grid-area: title2;
+    }
+    .b2-img{
+    grid-area: img2;
+    }
+    .b2-body {
+    grid-area: body2;
+    }
+    .b2-title{
+    grid-area: title3;
+    }
+    .b2-img{
+    grid-area: img3;
+    }
+    .b2-body {
+    grid-area: body3;
+    }
+    </style>
+    <body>
+        
+        <div class="container">
+            <div id="a1">
+                <img src="./pic-1.png" height=100% width=100% >
+            </div>
+            <div id="a2">
+                <div bgcolor="orange" class="headshot">ABOUT PPC LUBRICANTS</div>
+                <span class="bodyshot">
+                    <DIV>A Heritage of Specializing in Lubricants</DIV>
+                    <p>For over 40, ppc Lubricants has earned a solid reputation for offering high quality products and services that imorove your business. how?By providing costumer retention programs/products for installers and products and services that increase eauipment life and enhance the efficiency of all equipment whether it be Automotive, Heavy Duty Commercial, or industrial in its application.</p>
+                    <p>At PPC Lubricants, we take termendous pride in providing the highest level of Service. when you call our toll free numbers you will be greeted by a staff that is knowledgeable and experientative recives industry specific training on the latest advancement in lubrication technology including changing equipment and OEM requirements.</p>
+                </span>
+            </div>
+            <div id="a3">
+                <div id="b1">
+                    <div class="b1-title">test</div>
+                    <div class="b1-img">test</div>
+                    <div class="b1-body">test</div>
+                </div>
+                <div id="b2">
+                    <div class="b2-title"></div>
+                    <div class="b2-img"></div>
+                    <div class="b2-body"></div>
+                </div>
+                <div id="b3">
+                    <div class="b3-title"></div>
+                    <div class="b3-img"></div>
+                    <div class="b3-body"></div>
+                </div>
+                <div id="b4">
+                    <div class="b4-title"></div>
+                    <div class="b4-img"></div>
+                    <div class="b4-body"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
